@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>B Vijay Krishna - Full Stack Developer</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="nav-wrapper">
+        <div class="logo">VK</div>
+        <div class="nav-links">
+            <a href="#home" class="active">Home</a>
+            <a href="#about">About</a>
+            <a href="#projects">Projects</a>
+            <a href="#skills">Skills</a>
+            <a href="#achievements">Achievements</a>
+            <a href="#contact">Contact</a>
+        </div>
+        <button class="theme-toggle" aria-label="Toggle theme">
+            <i class="fas fa-sun"></i>
+            <i class="fas fa-moon"></i>
+        </button>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1 class="glitch" data-text="B Vijay Krishna">B Vijay Krishna</h1>
+            <div class="typewriter">
+                <span id="type-text"></span><span class="cursor">|</span>
+            </div>
+            <div class="cta-buttons">
+                <a href="#projects" class="cta-primary">View Projects</a>
+                <a href="#contact" class="cta-secondary">Contact Me</a>
+            </div>
+        </div>
+        <div class="hero-scroll">
+            <div class="mouse"></div>
+            <p>Scroll to explore</p>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about" data-aos="fade-up">
+        <h2 class="section-title">About Me</h2>
+        <div class="about-content">
+            <div class="about-text">
+                <p>Computer Science student and aspiring Software Development Engineer skilled in data structures, algorithms, and full-stack development. Experienced in designing scalable web applications using the MERN stack, REST APIs, and cloud platforms.</p>
+                <p>Passionate about solving complex problems, optimizing performance, and writing clean, efficient code. Currently exploring Blockchain and AI technologies while mastering Data Structures & Algorithms.</p>
+            </div>
+            <div class="about-stats">
+                <div class="stat">
+                    <span class="number" data-target="3">0</span>
+                    <span class="label">Years of Experience</span>
+                </div>
+                <div class="stat">
+                    <span class="number" data-target="15">0</span>
+                    <span class="label">Projects Completed</span>
+                </div>
+                <div class="stat">
+                    <span class="number" data-target="5">0</span>
+                    <span class="label">Certifications</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <h2 class="section-title">Featured Projects</h2>
+        <div class="projects-grid">
+            <!-- FinFlex -->
+            <div class="project-card" data-aos="fade-up">
+                <div class="project-image">
+                    <img src="images/finflex.png" alt="FinFlex Project">
+                </div>
+                <div class="project-content">
+                    <h3>FinFlex – Finance Tracker</h3>
+                    <p>A full-stack finance tracker providing real-time insights into income and expenses. Features secure authentication, CRUD operations, and Redux state management.</p>
+                    <div class="project-tech">
+                        <span>React.js</span>
+                        <span>Node.js</span>
+                        <span>Redux</span>
+                        <span>Firebase</span>
+                        <span>Ant Design</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://finflex.vercel.app/dashboard" target="_blank" class="btn-demo">Live Demo</a>
+                        <a href="https://github.com/vijaykrishn55/finflex-finance-site" target="_blank" class="btn-code">View Code</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Typing Cat -->
+            <div class="project-card" data-aos="fade-up" data-aos-delay="200">
+                <div class="project-image">
+                    <img src="images/typing-cat.png" alt="Typing Cat Project">
+                </div>
+                <div class="project-content">
+                    <h3>Typing Cat – Speed Test Platform</h3>
+                    <p>Multi-mode typing test application with real-time score tracking and user authentication. Implements React Hooks & Context API for state management.</p>
+                    <div class="project-tech">
+                        <span>React.js</span>
+                        <span>Firebase</span>
+                        <span>Context API</span>
+                        <span>HTML/CSS</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://typing-tester-zeta.vercel.app/" target="_blank" class="btn-demo">Live Demo</a>
+                        <a href="https://github.com/vijaykrishn55/typing-tester" target="_blank" class="btn-code">View Code</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- YouTube Clone -->
+            <div class="project-card" data-aos="fade-up" data-aos-delay="400">
+                <div class="project-image">
+                    <img src="images/youtube-clone.png" alt="YouTube Clone Project">
+                </div>
+                <div class="project-content">
+                    <h3>YouTube Clone Interface</h3>
+                    <p>A responsive YouTube-style web interface utilizing Redux for state management and YouTube Data API for dynamic video content retrieval.</p>
+                    <div class="project-tech">
+                        <span>React.js</span>
+                        <span>Redux</span>
+                        <span>YouTube API</span>
+                        <span>JavaScript</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://youtube-clone-neon-psi.vercel.app/" target="_blank" class="btn-demo">Live Demo</a>
+                        <a href="https://github.com/vijaykrishn55/youtube-clone" target="_blank" class="btn-code">View Code</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills" data-aos="fade-up">
+        <h2 class="section-title">Technical Skills</h2>
+        <div class="skills-container">
+            <div class="skill-category">
+                <h3>Languages</h3>
+                <div class="skill-items">
+                    <div class="skill-item">
+                        <i class="fab fa-java"></i>
+                        <span>Java</span>
+                    </div>
+                    <div class="skill-item">
+                        <i class="fab fa-js"></i>
+                        <span>JavaScript</span>
+                    </div>
+                    <div class="skill-item">
+                        <i class="fab fa-node-js"></i>
+                        <span>Node.js</span>
+                    </div>
+                    <div class="skill-item">
+                        <i class="fas fa-code"></i>
+                        <span>C</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="skill-category">
+                <h3>Frontend</h3>
+                <div class="skill-items">
+                    <div class="skill-item">
+                        <i class="fab fa-react"></i>
+                        <span>React.js</span>
+                    </div>
+                    <div class="skill-item">
+                        <i class="fab fa-vuejs"></i>
+                        <span>Vue.js</span>
+                    </div>
+                    <div class="skill-item">
+                        <i class="fab fa-html5"></i>
+                        <span>HTML5</span>
+                    </div>
+                    <div class="skill-item">
+                        <i class="fas fa-paint-brush"></i>
+                        <span>Tailwind CSS</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="skill-category">
+                <h3>Backend & Database</h3>
+                <div class="skill-items">
+                    <div class="skill-item">
+                        <i class="fab fa-node"></i>
+                        <span>Express.js</span>
+                    </div>
+                    <div class="skill-item">
+                        <i class="fas fa-database"></i>
+                        <span>MongoDB</span>
+                    </div>
+                    <div class="skill-item">
+                        <i class="fas fa-database"></i>
+                        <span>MySQL</span>
+                    </div>
+                    <div class="skill-item">
+                        <i class="fas fa-fire"></i>
+                        <span>Firebase</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="skill-category">
+                <h3>Tools & Platforms</h3>
+                <div class="skill-items">
+                    <div class="skill-item">
+                        <i class="fab fa-git-alt"></i>
+                        <span>Git</span>
+                    </div>
+                    <div class="skill-item">
+                        <i class="fas fa-code-branch"></i>
+                        <span>REST APIs</span>
+                    </div>
+                    <div class="skill-item">
+                        <i class="fas fa-tools"></i>
+                        <span>VS Code</span>
+                    </div>
+                    <div class="skill-item">
+                        <i class="fas fa-terminal"></i>
+                        <span>Postman</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Achievements Section -->
+    <section id="achievements" class="achievements" data-aos="fade-up">
+        <h2 class="section-title">Achievements & Certifications</h2>
+        <div class="achievements-grid">
+            <div class="achievement-card">
+                <div class="achievement-icon">
+                    <i class="fas fa-trophy"></i>
+                </div>
+                <h3>HYPERTHON 2025</h3>
+                <p>Ranked in Top 10 Teams at KLE Institute of Technology's coding challenge</p>
+            </div>
+            <div class="achievement-card">
+                <div class="achievement-icon">
+                    <i class="fas fa-certificate"></i>
+                </div>
+                <h3>MERN Full Stack Development</h3>
+                <p>AccioJob – NSDC Certified Developer</p>
+            </div>
+            <div class="achievement-card">
+                <div class="achievement-icon">
+                    <i class="fas fa-atom"></i>
+                </div>
+                <h3>Quantum Information Processing</h3>
+                <p>Workshop Completion at IIIT Dharwad</p>
+            </div>
+            <div class="achievement-card">
+                <div class="achievement-icon">
+                    <i class="fas fa-microchip"></i>
+                </div>
+                <h3>HPC Upskilling Program</h3>
+                <p>Completed at IIT Dharwad</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <h2 class="section-title">Get In Touch</h2>
+        <div class="contact-container">
+            <div class="contact-info">
+                <div class="contact-item">
+                    <i class="fas fa-envelope"></i>
+                    <a href="mailto:bvijaykrishna0@gmail.com">bvijaykrishna0@gmail.com</a>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-phone"></i>
+                    <a href="tel:+919110631433">+91 9110631433</a>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <span>Hospet, Karnataka</span>
+                </div>
+            </div>
+            <div class="social-links">
+                <a href="https://linkedin.com/in/b-vijaykrishna05" target="_blank" class="social-link">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="https://github.com/vijaykrishn55" target="_blank" class="social-link">
+                    <i class="fab fa-github"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="modern-footer">
+        <p class="tech-stack">Built with HTML5, JavaScript, and Modern CSS</p>
+        <p class="copyright">&copy; 2025 B Vijay Krishna. All rights reserved.</p>
+    </footer>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
