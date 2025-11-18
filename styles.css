@@ -21,9 +21,13 @@
     --text-light: #636e72;
     --text-rgb: 45, 52, 54;
     --white: #ffffff;
+    --card-bg: #ffffff;
+    --section-alt-bg: #ffffff;
+    --border-color: rgba(0, 0, 0, 0.1);
     --card-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
     --nav-bg: rgba(255, 255, 255, 0.95);
-    --hero-gradient: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    --hero-gradient: linear-gradient(135deg, #0f172a 0%, #1e293b 50%, #334155 100%);
+    --hero-text: #ffffff;
 }
 
 :root[data-theme="dark"] {
@@ -35,13 +39,17 @@
     --text-light: #a0a0a0;
     --text-rgb: 255, 255, 255;
     --white: #2d2d2d;
-    --card-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+    --card-bg: #1a1a1a;
+    --section-alt-bg: #1a1a1a;
+    --border-color: rgba(255, 255, 255, 0.1);
+    --card-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
     --nav-bg: rgba(26, 26, 26, 0.95);
     --hero-gradient: linear-gradient(135deg, 
-        #1e1b4b 0%, 
-        #312e81 50%, 
-        #3730a3 100%
+        #0a0a0a 0%, 
+        #1a1a1a 50%, 
+        #2d2d2d 100%
     );
+    --hero-text: #ffffff;
 }
 
 /* Global Styles */
@@ -166,8 +174,8 @@ section,
     align-items: center;
     text-align: center;
     padding: 0 1rem;
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-    color: var(--white);
+    background: var(--hero-gradient);
+    color: var(--hero-text);
     position: relative;
 }
 
@@ -213,13 +221,13 @@ section,
 
 .cta-primary {
     background-color: var(--secondary-color);
-    color: var(--white);
+    color: #ffffff;
 }
 
 .cta-secondary {
     background-color: transparent;
-    border: 2px solid var(--white);
-    color: var(--white);
+    border: 2px solid var(--hero-text);
+    color: var(--hero-text);
 }
 
 .cta-primary:hover,
@@ -231,7 +239,7 @@ section,
 /* About Section */
 .about {
     padding: 100px 5%;
-    background-color: var(--white);
+    background-color: var(--section-alt-bg);
 }
 
 .section-title {
@@ -251,8 +259,10 @@ section,
 
 .about-text p {
     margin-bottom: 1.5rem;
-    color: var(--text-light);
+    color: var(--text-color);
     font-size: 1.1rem;
+    line-height: 1.8;
+    opacity: 0.9;
 }
 
 .about-stats {
@@ -272,8 +282,10 @@ section,
 }
 
 .label {
-    color: var(--text-light);
+    color: var(--text-color);
     font-size: 0.9rem;
+    opacity: 0.8;
+    margin-top: 0.5rem;
 }
 
 /* Projects Section */
@@ -291,13 +303,13 @@ section,
 }
 
 .project-card {
-    background-color: var(--white);
+    background-color: var(--card-bg);
     border-radius: 15px;
     overflow: hidden;
     box-shadow: var(--card-shadow);
     transition: var(--transition);
     position: relative;
-    border: 1px solid rgba(0,0,0,0.1);
+    border: 1px solid var(--border-color);
 }
 
 .project-card:hover {
@@ -358,7 +370,7 @@ section,
     border-radius: 20px;
     font-size: 0.85rem;
     color: var(--text-light);
-    border: 1px solid rgba(0,0,0,0.1);
+    border: 1px solid var(--border-color);
     font-weight: 500;
 }
 
@@ -379,7 +391,7 @@ section,
 
 .btn-demo {
     background-color: var(--secondary-color);
-    color: var(--white);
+    color: #ffffff;
 }
 
 .btn-code {
@@ -390,7 +402,7 @@ section,
 /* Skills Section */
 .skills {
     padding: 100px 5%;
-    background-color: var(--white);
+    background-color: var(--section-alt-bg);
 }
 
 .skills-container {
@@ -448,12 +460,13 @@ section,
 }
 
 .achievement-card {
-    background-color: var(--white);
+    background-color: var(--card-bg);
     padding: 2rem;
     border-radius: 15px;
     text-align: center;
     box-shadow: var(--card-shadow);
     transition: var(--transition);
+    border: 1px solid var(--border-color);
 }
 
 .achievement-card:hover {
@@ -479,7 +492,7 @@ section,
 /* Contact Section */
 .contact {
     padding: 100px 5%;
-    background-color: var(--white);
+    background-color: var(--section-alt-bg);
 }
 
 .contact-container {
@@ -540,10 +553,16 @@ section,
     position: relative;
     background-color: #111827;
     color: #ffffff;
+    transition: var(--transition);
 }
 
 :root[data-theme="dark"] .modern-footer {
-    background-color: #1f2937;
+    background-color: #0a0a0a;
+    border-top: 1px solid var(--border-color);
+}
+
+:root[data-theme="light"] .modern-footer {
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
 }
 
 .modern-footer::before {
@@ -555,21 +574,23 @@ section,
     width: 50px;
     height: 2px;
     background-color: var(--secondary-color);
-    opacity: 0.3;
+    opacity: 0.5;
 }
 
 .tech-stack {
     font-size: 0.9rem;
     font-weight: 400;
-    color: rgba(255, 255, 255, 0.9);
+    color: #ffffff;
     margin-bottom: 1rem;
     letter-spacing: 0.5px;
+    opacity: 0.9;
 }
 
 .copyright {
     font-size: 0.85rem;
-    color: rgba(255, 255, 255, 0.6);
+    color: #ffffff;
     font-weight: 300;
+    opacity: 0.7;
 }
 
 /* Add subtle hover effect to footer */
